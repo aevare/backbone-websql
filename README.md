@@ -8,6 +8,7 @@ Implementation of Backbone.sync to store data to WebSQL (available on webkit-bas
 * Navigate to test/index.html (`http://localhost:8080/test/index.html`)
 
 # Model select by column
+
 Select from table with certain value in column
 ```javascript
 var model = new Model({ model: 'Audi' });
@@ -15,8 +16,10 @@ model.fetch({
     success: onSuccess,
     error: onError
 });
+```
 
 # Collection select options
+
 Select from table with certain value in column
 ```javascript
 collection.fetch({
@@ -27,6 +30,7 @@ collection.fetch({
     error: onError
 });
 ```
+
 Limit select results
 ```javascript
 collection.fetch({
@@ -35,6 +39,7 @@ collection.fetch({
     error: onError
 });
 ```
+
 Order results by date
 ```javascript
 collection.fetch({
